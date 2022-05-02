@@ -1,0 +1,295 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Mono" !important;
+  background: #0f0f0f !important;
+  color: #fff !important;
+}
+
+html body .whitespace {
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  html body .whitespace {
+    display: none;
+  }
+}
+
+html body .line {
+  width: 24em;
+  top: 50%;
+  margin: auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+html body .anim-typewriter {
+  -webkit-animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+          animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@media (max-width: 768px) {
+  @-webkit-keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 17em;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 17em;
+    }
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+html body header .wrapper nav {
+  width: 100%;
+  background: #0f0f0f;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+}
+
+html body header .wrapper nav #brand {
+  float: left;
+  display: block;
+  margin-left: 82px;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+html body header .wrapper nav #brand a {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+html body header .wrapper nav #menu {
+  float: left;
+  right: 80px;
+  position: fixed;
+}
+
+html body header .wrapper nav #menu li {
+  padding-left: 40px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 80px;
+  position: relative;
+  -webkit-transition: all 0.3ms ease-out;
+  transition: all 0.3ms ease-out;
+}
+
+html body header .wrapper nav #menu li span {
+  font-weight: 700;
+}
+
+html body header .wrapper nav #menu li a {
+  color: #fff;
+}
+
+html body header .wrapper nav #toggle {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-weight: 300;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  float: right;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+html body header .wrapper #resize {
+  z-index: 1;
+  top: 0px;
+  position: fixed;
+  background: #0f0f0f;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+html body header .wrapper #resize .close-btn {
+  position: absolute;
+  right: 16px;
+  font-weight: 300;
+  z-index: 2;
+  cursor: pointer;
+  top: -2px;
+  line-height: 80px;
+}
+
+html body header .wrapper #resize #menu {
+  height: 90px;
+  position: absolute;
+  left: 45%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  text-align: center;
+  display: table-cell;
+  vertical-align: center;
+}
+
+html body header .wrapper #resize #menu li {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+html body header .wrapper #resize #menu li:nth-child(1) {
+  margin-top: 140px;
+}
+
+html body header .wrapper #resize #menu li a {
+  color: #fff;
+}
+
+html body header .wrapper #resize.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  html body header .wrapper nav #brand {
+    margin-left: 24px;
+  }
+  html body header .wrapper nav #toggle {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 6px;
+    margin-right: 4px;
+  }
+  html body header .wrapper nav #menu {
+    display: none;
+  }
+  html body header .wrapper nav #menu a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  html body header .wrapper #resize #menu a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  html body header .wrapper #resize #menu li span {
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 768px) {
+  html body #resize {
+    visibility: hidden !important;
+  }
+}
+/*# sourceMappingURL=global.css.map */
