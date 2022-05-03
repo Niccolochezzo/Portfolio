@@ -159,6 +159,7 @@ html body header .wrapper nav #brand a {
   color: #fff;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  text-decoration: none;
 }
 
 html body header .wrapper nav #menu {
@@ -184,6 +185,7 @@ html body header .wrapper nav #menu li span {
 
 html body header .wrapper nav #menu li a {
   color: #fff;
+  text-decoration: none;
 }
 
 html body header .wrapper nav #toggle {
@@ -254,6 +256,7 @@ html body header .wrapper #resize #menu li:nth-child(1) {
 
 html body header .wrapper #resize #menu li a {
   color: #fff;
+  text-decoration: none;
 }
 
 html body header .wrapper #resize.active {
@@ -290,6 +293,205 @@ html body header .wrapper #resize.active {
 @media (min-width: 768px) {
   html body #resize {
     visibility: hidden !important;
+  }
+}
+
+html body .hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body .hero .header h1 {
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: -2px;
+  line-height: 58px;
+}
+
+@media (min-width: 768px) {
+  html body .hero .header h1 {
+    font-size: 38px;
+  }
+}
+
+html body .scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 0;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: translate(-50%, 0) rotate(45deg);
+          transform: translate(-50%, 0) rotate(45deg);
+  -webkit-animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+          animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px) rotate(45deg);
+            transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px) rotate(45deg);
+            transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px) rotate(45deg);
+            transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px) rotate(45deg);
+            transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+html body .container-fluid h6 {
+  text-align: center;
+}
+
+html body .container-fluid .vertical {
+  margin-top: 40px;
+  border-left: 1px solid #fff;
+  height: 3858px;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  left: 50%;
+}
+
+html body .container-fluid .row {
+  margin-top: 80px;
+}
+
+html body .container-fluid .row .project {
+  height: 500px;
+}
+
+html body .container-fluid .row .project1 {
+  background: url(../img/lannn1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 750px;
+}
+
+html body .container-fluid .row .project1::after {
+  content: "timeless flow.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 8%;
+  left: -52%;
+  right: 0;
+  bottom: 0;
+}
+
+html body .container-fluid .row .project2 {
+  background: url(../img/marrrrr111.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 700px;
+}
+
+html body .container-fluid .row .project2::after {
+  content: "foretime.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 80%;
+  left: 102%;
+  right: 0;
+  bottom: 0;
+}
+
+html body .container-fluid .row .project3 {
+  background: url(../img/inii1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 700px;
+}
+
+html body .container-fluid .row .project3::after {
+  content: "never again.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 80%;
+  left: -63.8%;
+  right: 0;
+  bottom: 0;
+}
+
+html body .container-fluid .row .project4 {
+  background: url(../img/nann.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 900px;
+}
+
+html body .container-fluid .row .project4::after {
+  content: "departure.";
+  font-family: "Roboto Mono";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 10%;
+  left: 114%;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  html body .container-fluid .vertical {
+    display: none;
+  }
+  html body .container-fluid .row .project {
+    width: 90% !important;
+    margin: 14px auto;
+    height: 500px;
+  }
+  html body .container-fluid .row .project1::after {
+    display: none;
+  }
+  html body .container-fluid .row .project2::after {
+    display: none;
+  }
+  html body .container-fluid .row .project3::after {
+    display: none;
+  }
+  html body .container-fluid .row .project4::after {
+    display: none;
   }
 }
 /*# sourceMappingURL=global.css.map */
