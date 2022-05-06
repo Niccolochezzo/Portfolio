@@ -419,6 +419,7 @@ html body .container-fluid .row .project1::after {
 html body .container-fluid .row .project2 {
   background: url(../img/marrrrr111.jpg) no-repeat 50% 50%;
   background-size: cover;
+  background-position: center;
   height: 700px;
 }
 
@@ -565,6 +566,17 @@ html body footer .footer .container .info .row #media ul #ig::before {
   background: #fcaf45;
 }
 
+html body footer .footer .container .info .row #media ul #git::before {
+  display: inline-block;
+  content: '';
+  border-radius: 100%;
+  height: 4px;
+  width: 4px;
+  margin-right: -20px;
+  margin-left: 6px;
+  background: #5e5858;
+}
+
 html body footer .footer .container .info .row #address {
   text-align: right;
 }
@@ -596,5 +608,37 @@ html body footer .footer .container .info .row #address h4 {
   html body footer .footer .container .info .row #address {
     text-align: center;
   }
+}
+
+.container .hero-content {
+  margin-left: 0%;
+}
+
+.container .hero-content .row div p {
+  font-weight: 300;
+  line-height: 36px;
+  color: grey;
+}
+
+.container .hero-content .row div h3 {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .container .hero-content {
+    padding-top: 50px;
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+.container .row .about {
+  height: 500px;
+  margin-top: 120px;
+}
+
+.container .row .image {
+  background: url(../img/abt.jpg) no-repeat 50% 70%;
+  background-size: cover;
 }
 /*# sourceMappingURL=global.css.map */
