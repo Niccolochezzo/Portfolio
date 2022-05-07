@@ -109,7 +109,7 @@ html body .anim-typewriter {
       width: 0;
     }
     to {
-      width: 17em;
+      width: 16.5em;
     }
   }
   @keyframes typewriter {
@@ -117,7 +117,7 @@ html body .anim-typewriter {
       width: 0;
     }
     to {
-      width: 17em;
+      width: 16.5em;
     }
   }
 }
@@ -320,6 +320,12 @@ html body .hero .header h1 {
 @media (min-width: 768px) {
   html body .hero .header h1 {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body .hero .header h1 {
+    font-size: 22px;
   }
 }
 
