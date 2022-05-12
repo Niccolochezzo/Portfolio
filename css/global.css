@@ -189,6 +189,22 @@ html body header .wrapper nav #menu li a {
   text-decoration: none;
 }
 
+html body header .wrapper nav #menu li a i {
+  font-size: 14px;
+}
+
+html body header .wrapper nav #menu li a .fa-facebook {
+  margin-left: -35px;
+}
+
+html body header .wrapper nav #menu li a .fa-facebook:hover {
+  color: #99a9f5;
+}
+
+html body header .wrapper nav #menu li a .fa-instagram:hover {
+  color: #fcaf45;
+}
+
 html body header .wrapper nav #toggle {
   position: absolute;
   right: 30px;
